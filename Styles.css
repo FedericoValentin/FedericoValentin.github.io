@@ -1,46 +1,100 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    padding: 50px;
+    width: 25%;
+    background-color: #1A2C3E;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 400px;
+}
+
+.right {
+    text-align: left;
+    background-color: #F5E6C1;
+    padding: 50px;
+    padding-top: 100px;
+    flex: 1;
+    padding-bottom: 350px;
+
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f6f9fc;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  background-color: #232f3e;
-  color: white;
-  padding: 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-weight: bold;
-}
-
-header img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #1A2C3E;
 }
 
 section {
-  margin-bottom: 20px;
-  background-color: #f6f9fc;
-  padding: 20px;
-  transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
 section h2 {
-  color: #232f3e;
-  font-weight: bold;
+    color: #F5E6C1;
+    font-weight: bold;
 }
 
 section:hover {
-  background-color: #e9ecef;
-  cursor: pointer;
+    background-color: #D9C4A7;
+    cursor: pointer;
 }
 
-section li h3 {
-  color: #232f3e;
+div.left section:hover {
+    background-color: #34495E;
+    cursor: pointer;
 }
+
+div.left section {
+    background-color: #1A2C3E;
+    padding-bottom:55px;
+    color: #F5E6C1;
+}
+
+footer {
+    font-size: 12px;
+    text-align: right;
+    color: #1A2C3E;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #F5E6C1;
+}
+
+div.right .title {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #1A2C3E;
+}
+
+div.right h2 {
+     text-align: center;
+     padding-bottom: 20px;
+     font-weight: bold;
+     color: #1A2C3E;
+ }
