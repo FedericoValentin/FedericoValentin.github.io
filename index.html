@@ -7,114 +7,119 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
   <style>
-        .container {
-          display: flex;
-          height: 100vh;
-        }
+    .container {
+      display: flex;
+      height: 100%;
+      min-height: 100%;
+      align-items: stretch;
+    }
 
-        .left {
-            padding: 50px;
-            width: 25%;
-            background-color: #1A2C3E;
-            height: 100%;
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-bottom: 100%;
-        }
+    .left {
+      flex: .35;
+      width: 25%;
+      background-color: #1A2C3E;
+      align-items: stretch
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-        .right {
-            text-align: left;
-            background-color: #F5E6C1;
+    .right {
+      background-color: #F5E6C1;
+      flex: 1;
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-            flex: 1;
-            padding-top: 5%;
-            padding-bottom: 98%;
-            padding-left: 10%;
-            padding-right: 10%;
-            height: 100%;
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    .profile-pic {
 
+        max-width: 12vw;
+        flex: 1;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-left: 25%;
+        margin-top: 15vh;
+        margin-bottom: 8vh;
+    }
 
-        .profile-pic {
-            margin: 0 auto;
-            width: 8vw;
-            border-radius: 50%;
-            margin-left: 25%;
-            margin-top: 80px;
-        }
+    body {
+        font-family: 'Khand', sans-serif;
+        font-size: 20px;
+        background-color: #f5f5f5;
+        color: #1A2C3E;
+        height: 100%;
+        min-height: 100%;
+    }
 
-        body {
-            font-family: 'Khand', sans-serif;
-                        font-size: 20px;
-            background-color: #f5f5f5;
-            color: #1A2C3E;
-        }
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: background-color 0.3s ease;
+    }
 
-        section {
-            margin-bottom: 20px;
-            padding: 20px;
-            transition: background-color 0.3s ease;
-        }
+    section h2 {
+        color: #F5E6C1;
+        font-weight: bold;
+    }
 
-        section h2 {
-            color: #F5E6C1;
-            font-weight: bold;
-        }
+    section:hover {
+        background-color: #D9C4A7;
+        cursor: pointer;
+    }
 
-        section:hover {
-            background-color: #D9C4A7;
-            cursor: pointer;
-        }
+    div.left section:hover {
+        background-color: #34495E;
+        cursor: pointer;
+    }
 
-        div.left section:hover {
-            background-color: #34495E;
-            cursor: pointer;
-        }
+    div.left section {
+        background-color: #1A2C3E;
+        color: #F5E6C1;
+    }
 
-        div.left section {
-            background-color: #1A2C3E;
-            padding-bottom:55px;
-            color: #F5E6C1;
-        }
+    footer {
+        font-size: 12px;
+        text-align: right;
+        color: #1A2C3E;
+    }
 
-        footer {
-            font-size: 12px;
-            text-align: right;
-            color: #1A2C3E;
-        }
+    .title {
+        text-align: center;
+        margin-top: 15vh;
+        margin-bottom: 9vh;
+        font-weight: bold;
+        color: #F5E6C1;
+    }
 
-        .title {
-            text-align: center;
-            padding-bottom: 20px;
-            font-weight: bold;
-            color: #F5E6C1;
-        }
+    div.right .title {
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 45px;
+        font-weight: bold;
+        color: #1A2C3E;
+    }
 
-        div.right .title {
-            font-size: 60px;
-            text-align: center;
-            padding-bottom: 20px;
-            font-weight: bold;
-            color: #1A2C3E;
-        }
+    div.right h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #1A2C3E;
+    }
 
-        div.right h2 {
-             text-align: center;
-             padding-bottom: 20px;
-             font-weight: bold;
-             color: #1A2C3E;
-         }
+    div.right li {
+       line-height: .5em;
+    }
 
-        div.right li {
-          line-height: .5em;
-         }
+    .link:hover {
+      font-weight:bold;
+      font-size:21px;
+     }
 
+    div.left div{
+    flex:1;
+          align-items: stretch;
+    }
 
 
 
@@ -125,15 +130,17 @@
 <div class="container">
   <div class="left">
     <section>
-      <img src="./img.jpg" alt="Profile picture" class="profile-pic">
+      <div>
+        <img src="./img.jpg" alt="Profile picture" class="profile-pic">
+      </div>
     </section>
     <section>
       <h2>Contacto</h2>
       <ul>
         <li>Email: fvaletnin1990@gmail.com</li>
         <li>Teléfono: +59899504797</li>
-        <li>Linkedin: /federico-valentín-911008247</li>
-        <li>GitHub: /FedericoValentin</li>
+        <li class="link">Linkedin: <a href="https://www.linkedin.com/in/federico-valent%C3%ADn-911008247/" style="color: #F5E6C1; text-decoration: none;">/federico-valentín-911008247</a></li>
+        <li class="link">Github: <a href="https://github.com/FedericoValentin" style="color: #F5E6C1; text-decoration: none;">/FedericoValentin</a></li>
       </ul>
     </section>
     <section>
@@ -145,6 +152,7 @@
         <li>Estado Civil: Casado</li>
         <li>Edad: 32 años</li>
       </ul>
+      <br>
     </section>
     <section>
       <h2>Habilidades</h2>
@@ -169,7 +177,7 @@
     </section>
     <section>
       <h2>Objetivo profesional</h2>
-      <p>Mi objetivo profesional es desempeñarme en una empresa de IT, donde pueda aplicar mis habilidades como docente en el manejo de personas y en el trabajo en equipo. Como docente con más de 10 años de experiencia, he desarrollado una gran autonomía profesional y una habilidad para comunicar de manera efectiva con diferentes tipos de personas. Además, he estudiado IT por unos años y estoy listo para seguir aprendiendo y enfrentar nuevos desafíos en este campo. Busco contribuir al éxito de la empresa con mi experiencia, habilidades y dedicación, y estoy seguro de que mi experiencia y habilidades son una excelente adición para el equipo de trabajo.</p>
+      <p>Mi objetivo profesional es desempeñarme en una empresa de IT, donde pueda aplicar mis habilidades como docente en el manejo de personas y en el trabajo en equipo. Como docente con más de 10 años de experiencia, he desarrollado una gran autonomía profesional y una habilidad para comunicar de manera efectiva con diferentes tipos de personas. Además, he estudiado IT por unos años y estoy listo para seguir aprendiendo y enfrentar nuevos desafíos en este campo.</p>
     </section>
     <section>
       <h2>Estudios</h2>
@@ -188,18 +196,28 @@
       </ul>
     </section>
     <section>
-      <h2>Experiencia laboral</h2>
+      <h2 class="exp">Experiencia laboral</h2>
       <ul>
         <li>
           <h3>Docente de Física en ANEP</h3>
           <p>2012 - Actualidad</p>
-          <p>Me he desempeñado como docente de física en diversos niveles, incluyendo nivel terciario. </p>
+          <br>
+          <p style="font-weight:bold">Me he desempeñado como docente de física en los siguientes centros:</p>
+          <p>Atlántida </p>
+          <p>Médanos de Solymar </p>
+          <p>Shangrilá </p>
+          <p>El Pinar </p>
+          <br>
+          <p style="font-weight:bold">Como docente orientador de laboratorio en:</p>
+          <p>CeRP de Atlántida [Nivel Terciario]</p>
+          <p>Liceo Shangrilá </p>
+          <br><br><br>
         </li>
         <!-- Agrega más elementos li para agregar más experiencias laborales -->
       </ul>
     </section>
     <footer>
-      <p>Publicado el: <script> document.write(new Date().toLocaleString()) </script> </p>
+      <p>Publicado el: <script> document.write(new Date().toLocaleString() + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;") </script> </p>
     </footer>
   </div>
 </div>
