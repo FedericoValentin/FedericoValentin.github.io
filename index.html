@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,25 +11,12 @@
         margin-bottom: 50px;
       }
 
-      body {
-        margin: 0px 50px; /* márgenes grandes */
-        font-size: 24px; /* fuente más grande */
-      }
-    </style>
-    <script>
-  document.getElementById("loadingMessage").innerHTML = "Wow entraste!";
-  document.getElementById("loadingMessage").style.cssText = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);";
-  setTimeout(function(){
-      document.getElementById("loadingMessage").style.display = "none";
-      window.location.href = "cv.html";
-  }, 2000);
-    }
-    </script>
-    
-    
-    
-    
-    
+  body {
+    margin: 0px 50px; /* márgenes grandes */
+    font-size: 24px; /* fuente más grande */
+  }
+</style>
+
   </head>
   <body>
     <div id="banner">
@@ -35,6 +24,15 @@
     </div>
     <p>Ésta es mi página personal, estoy trabajando en ella.</p>
     <p>Mientras tanto te invito a ver <a href="CV/cv.html" onclick="loadingMessage()">mi curriculum vitae.</a></p>
-    <div id="loadingMessage"></div>
+    <div id="loadingMessage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+    <script>
+      function loadingMessage(){
+        document.getElementById("loadingMessage").innerHTML = "Wow entraste!";
+        setTimeout(function(){
+          document.getElementById("loadingMessage").style.display = "none";
+          window.location.href = "cv.html";
+        }, 2000);
+      }
+    </script>
   </body>
 </html>
