@@ -14,12 +14,23 @@
         font-size: 24px; /* fuente más grande */
       }
     </style>
+    <script>
+      function loadingMessage() {
+      alert("Wow entraste!");
+      setTimeout(function(){ window.location.href = "cv.html"; }, 2000);
+    }
+    </script>
+    
+    
+    
+    
+    
   </head>
   <body>
     <div id="banner">
       <h1>Tu nombre</h1>
     </div>
     <p>Ésta es mi página personal, estoy trabajando en ella.</p>
-    <p>Mientras tanto te invito a ver <a href="CV/cv.html">mi curriculum vitae.</a></p>
+    <p>Mientras tanto te invito a ver <a href="CV/cv.html" onclick="loadingMessage()">mi curriculum vitae.</a></p>
   </body>
 </html>
