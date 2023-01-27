@@ -22,16 +22,16 @@
     <div id="banner">
       <h1>Tu nombre</h1>
     </div>
-    <p>Ésta es mi página personal, estoy trabajando en ella.</p>
-    <p>Mientras tanto te invito a ver <a href="CV/cv.html" onclick="loadingMessage()">mi curriculum vitae.</a></p>
+    <p>Mi página personal. Estoy trabajando en ella.</p>
+    <p>Click para ver <a href="CV/cv.html" onclick="loadingMessage()">mi curriculum vitae.</a></p>
     <div id="loadingMessage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
     <script>
       function loadingMessage(){
-        document.getElementById("loadingMessage").innerHTML = "Wow entraste!";
+        document.getElementById("loadingMessage").innerHTML = "Genial, entraste!";
         setTimeout(function(){
           document.getElementById("loadingMessage").style.display = "none";
           window.location.href = "cv.html";
-        }, 2000);
+        }, 20000);
       }
     </script>
   </body>
