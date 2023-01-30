@@ -1,39 +1,37 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
-    <style>
-      #banner {
-        background-color: #87CEFA;  
+<head>
+    <meta http-equiv="Content-Type"; content="text/html"; charset="UTF-8" />
+    <script>
+        function loadingMessage(){
+        document.getElementById("loadingMessage").innerHTML = "En camino!";
+        setTimeout(() => {window.open('https://federicovalentin.github.io/CV/cv.html','_blank')}, 1200);
+}
+    </script>
+    <styles>
+        #banner {
+        background-color: #87CEFA;
         padding: 40px;
         text-align: center;
         margin-bottom: 50px;
-      }
-
-  body {
-    margin: 0px 50px; /* márgenes grandes */
-    font-size: 24px; /* fuente más grande */
-  }
-</style>
-
-  </head>
-  <body>
+        }
+        body {
+        margin: 0px 50px;
+        font-size: 24px;
+        }
+        #loadingMessage{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    </styles>
+</head>
+<body>
     <div id="banner">
-      <h1>Federico Valentín</h1>
+        <h1>Federico Valentín</h1>
     </div>
     <p>Mi página personal. Estoy trabajando en ella.</p>
-    <p>Click para ver <a href="CV/cv.html" onclick="loadingMessage()">mi curriculum vitae.</a></p>
-    <div id="loadingMessage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
-    <script>
-      function loadingMessage(){
-        document.getElementById("loadingMessage").innerHTML = "Genial, entraste!";
-        setTimeout(function(){
-          document.getElementById("loadingMessage").style.display = "none";
-          window.location.href = "cv.html";
-        }, 20000);
-      }
-    </script>
-  </body>
+    <button onclick="loadingMessage()">Click para ver mi curriculum vitae</button>
+    <div id="loadingMessage" ></div>
+</body>
 </html>
