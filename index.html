@@ -4,43 +4,53 @@
     <meta http-equiv="Content-Type"; content="text/html"; charset="UTF-8" />
     <script>
         function loadingMessage(){
-        document.getElementById("loadingMessage").innerHTML = "En camino!";
+        document.getElementById("loadingMessagep").innerHTML = "En camino!";
         setTimeout(() => {window.open('https://federicovalentin.github.io/CV/cv.html','_blank')}, 1200);
 }
     </script>
     <style>
         #banner {
-        background-color: #87CEFA;
-        padding: 45px;
-        text-align: center;
-        margin-bottom: 50px;
+            background-color: #FFC0CB;
+            padding: 45px;
+            text-align: center;
+            margin-bottom: 50px;
         }
         body {
-        margin: 0px 50px;
-        font-size: 20px;
+            background-color: #E6E6FA;
+            margin: 0px 50px;
+            font-size: 20px;
         }
-        #loadingMessage{
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        }
-        
+
         button {
-        background-color: #FFC107;
-        border: 2px solid #333;
-        border-radius: 50px;
-        box-shadow: 0px 10px 20px #333;
-        color: #333;
-        font-size: 20px;
-        padding: 20px 50px;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
+            background-color: #FFB6C1;
+            border: 2px solid #333;
+            border-radius: 50px;
+            box-shadow: 0px 10px 20px #333;
+            color: #333;
+            font-size: 20px;
+            padding: 20px 50px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
         }
 
         button:hover {
             background-color: #333;
-            color: #FFC107;
+            color: #FFB6C1;
             cursor: pointer;
+        }
+        #loadingMessage p {
+            color: #FFB6C1;
+            font-size: 60px;
+            text-align: center;
+            font-weight:bold;
+        }
+        #loadingMessage{
+            position: absolute;
+            top: 40%; left: 35%;
+            width: 50%; height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -50,6 +60,6 @@
 </div>
 <p>Mi página personal. Estoy trabajando en ella.</p>
 <button onclick="loadingMessage()">Click para ver mi curriculum vitae</button>
-<div id="loadingMessage" ></div>
+<div  id="loadingMessage"><p id="loadingMessagep"></p></div>
 </body>
 </html>
