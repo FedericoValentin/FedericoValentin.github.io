@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Federico Valentín's Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+          display: flex;
+          height: 100%;
+          min-height: 100%;
+          align-items: stretch;
+              justify-content: space-between;
+        }
+
+        .left {
+
+          display: flex;
+          flex: .35;
+          background-color: #1A2C3E;
+          align-items: stretch;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        div.left section{
+            padding-left:20%;
+        }
+        div.right section{
+            padding-left:4em;
+            padding-right:4em;
+        }
+
+        .right {
+          display: flex;
+          background-color: #F5E6C1;
+          flex: 1;
+          align-items: stretch;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .profile-pic {
+
+            max-width: 8em;
+            flex: 1;
+
+            border-radius: 50%;
+            margin-left: 1%;
+            margin-top: 10em;
+            margin-bottom: 3em;
+        }
+
+        body {
+            font-family: 'Khand', sans-serif;
+            font-size: 20px;
+            background-color: #f5f5f5;
+            color: #1A2C3E;
+            height: 100%;
+            min-height: 100%;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        section h2 {
+            color: #F5E6C1;
+            font-weight: lighter;
+                    font-size: 40px;
+        }
+
+        section:hover {
+            background-color: #D9C4A7;
+            cursor: pointer;
+        }
+
+        div.left section:hover {
+            background-color: #34495E;
+            cursor: pointer;
+        }
+
+        div.left section {
+            background-color: #1A2C3E;
+
+
+            color: #F5E6C1;
+        }
+
+        footer p {
+            margin-left: 30%;
+            font-size: 12px;
+            text-align: right;
+            color: #1A2C3E;
+        }
+        footer button{
+            margin-left: 10%;
+            margin-bottom: 10px;
+        }
+        footer{
+            height:50px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .title {
+            text-align: center;
+            margin-top: 2.2em;
+            margin-bottom: .5em;
+            font-weight: bold;
+            color: #F5E6C1;
+        }
+
+        div.right .title {
+            font-size: 110px;
+            text-align: center;
+            padding-bottom: 6%;
+            font-weight: lighter;
+            color: #1A2C3E;
+        }
+
+        div.right h2 {
+          text-align: center;
+          font-weight: lighter;
+          color: #1A2C3E;
+        }
+
+        .link:hover {
+          font-weight:bold;
+          font-size:21px;
+         }
+
+        div.left div{
+          margin-bottom: 20px;
+          padding: 20px;
+          flex:1;
+          align-items: stretch;
+        }
+        ul li p {
+        line-height: 1.2;
+        }
+
+                button {
+            font-family: 'Khand', sans-serif;
+            font-size: 20px;
+        background-color: #F5E6C1;
+
+
+         }
+        button:hover {
+          font-weight:bold;
+          font-size:21px;
+          background-color:  #D9C4A7;
+         }
+  </style>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              document.getElementById("english").addEventListener("click", function() {
+                window.location.href = "cvEn.html";
+              });
+
+              document.getElementById("espanol").addEventListener("click", function() {
+                window.location.href = "cv.html";
+              });
+            });
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <section>
+            <div>
+                <img src="img.jpg" alt="Profile picture" class="profile-pic">
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: fvaletnin1990@gmail.com</li>
+                <li>Phone: +59899504797</li>
+                <li class="link">LinkedIn: <a href="https://www.linkedin.com/in/federico-valent%C3%ADn-911008247/" style="color: #F5E6C1; text-decoration: none;">/federico-valentín-911008247</a></li>
+                <li class="link">Github: <a href="https://github.com/FedericoValentin" style="color: #F5E6C1; text-decoration: none;">/FedericoValentin</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Profile</h2>
+            <ul>
+                <li>Name: Federico Valentín Peralta</li>
+                <li>Address: Bolivia 1306 ap02</li>
+                <li>Parque Carrasco - Canelones</li>
+                <li>Marital status: Married</li>
+                <li>Age: 32</li>
+            </ul>
+            <br>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming (c++, java, javascript)</li>
+                <li>OS handling (Windows, Linux)</li>
+                <li>Databases (MySQL)</li>
+                <li>WebDev (HTML, CSS, JS)</li>
+                <li>Teamwork</li>
+                <li>Planning and prioritization</li>
+                <li>Effective communication</li>
+                <li>Problem solving</li>
+                <li>Logical thinking</li>
+            </ul><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+
+    </div>
+
+    <div class="right">
+        <section>
+            <h1 class="title"> Federico Valentín</h1>
+        </section>
+        <section>
+            <h2>Professional Objective</h2>
+            <p>My current goal is to work in an IT company where I can make use of my programming skills that I have acquired in recent years thanks to my ongoing studies in the field of Information Technology and the parallel courses I have taken. As a secondary objective, I aim to utilize my skills related to my role as a physics teacher, with over 10 years of experience, I have developed a great deal of professional autonomy and the ability to communicate effectively with different types of people, in addition to logical thinking and the physical/mathematical knowledge inherent in my role.</p>
+        </section>
+        <section>
+            <h2>Studies</h2>
+            <div style="display: inline; float: left;">
+                <ul>
+                    <h3>Physics Teacher</h3>
+                    <li>CFE - ANEP</li>
+                    <li>2009 - 2013</li>
+                    <h3>IT Technologist</h3>
+                    <li>UTU/UDELAR</li>
+                    <li>2020 [Ongoing]</li>
+                </ul>
+            </div>
+            <div style="margin-left:5%; margin-right:0% ; display: inline; float: right;">
+                <ul>
+                    <h3>Programming Experience in IT</h3>
+                    <li>Programming Fundamentals</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Career Laboratories (in teams)</li>
+                    <li>Java Course - UDEMY Prof. Tim Buchalka</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2 class="exp">Work Experience</h2>
+            <ul>
+                <li>
+                    <h3>Physics Teacher at ANEP</h3>
+                    <p>2012 - Present</p>
+                    <br>
+                    <p style="font-weight:bold">I have served as a physics teacher at the following centers:</p>
+                    <p>Atlántida </p>
+                    <p>Médanos de Solymar </p>
+                    <p>Shangrilá </p>
+                    <p>El Pinar </p>
+                    <br>
+                    <p style="font-weight:bold">As a laboratory instructor at:</p>
+                    <p>Atlántida CeRP [Tertiary Level]</p>
+                    <p>Shangrilá High School</p>
+                    <br><br><br><br>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <button id="english">English</button>
+            <button id="espanol">Español</button>
+            <p>TIMESTAMP: <script> document.write(new Date().toLocaleString() + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;") </script> </p>
+        </footer>
+    </div>
+    <br><br><br><br>
+    </li>
+    </ul>
+    </section>
+</div>
+</div>
+</body>
+</html>
+
